@@ -1,0 +1,29 @@
+---
+import demoInfo from '@/config/demoInfo.json'
+---
+
+<!-- You can open the modal using ID.showModal() method -->
+<button class="inline-block text-secondary" onclick="my_modal_3.showModal()"> Ver Detalles</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl  bg-gray-950">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div>
+        <h1 class="text-3xl py-4 font-bold">Recibiras</h1>
+        <div>
+          <ul>
+            {demoInfo.map((item, index) => (
+              <li>
+                <p class="text-gray-400">{item.title}</p>
+                <p>
+                  {item.description}
+                </p> 
+              </li>
+              <div class="divider"></div>
+            ))}
+          </ul>
+        </div>
+    </div>
+  </div>
+</dialog>

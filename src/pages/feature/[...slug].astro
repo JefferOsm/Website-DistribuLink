@@ -1,0 +1,36 @@
+---
+import featuresDetail from '../../config/featuresDetail.json'
+import Base from '@/layouts/Base.astro';
+const {slug} = Astro.params
+
+// Añadir un slug a cada objeto del arreglo
+const pages = featuresDetail.map(feature => ({
+  ...feature,
+  slug: feature.feature
+}));
+
+// Encontrar la página que coincida con el slug
+const page = pages.find(page => page.slug === slug);
+
+const {feature = '', description = [], icon = ''} = page ?? {};
+
+---
+
+<Base pageTitle={feature}>
+    <div class="min-h-screen container mt-5">
+        <div class="text-center text-white mb-4 w-10/12 mx-auto">
+            <span class="text-6xl mb-5"><i class={icon}></i></span>
+            <h1 class="font-bold text-3xl p-1">{feature}</h1>
+        </div>
+    
+        <div class="grid md:grid-cols-3 gap-6 p-4">
+            {
+                description.map(descript => (
+                    <div class="bg-slate-200 p-4 rounded-lg shadow-lg">
+                        <p class="text-lg font-bold text-center">{descript.title}</p>
+                        <p class="text-center">{descript.description}</p></div>
+                ))
+            }
+        </div>
+    </div>
+</Base>

@@ -1,0 +1,23 @@
+---
+interface Props {
+    title?: string;
+    description: Array<string> ;
+    icon?: string;
+}
+
+const {title, description,icon}= Astro.props
+---
+
+<a class="card  bg-primary shadow-md text-slate-300  hover:cursor-pointer hover:shadow-slate-400 opacity-90" href={`feature/${title}`}>
+    <div class="card-body">
+        <span style="font-size: 48px;">
+            <i class={icon}></i>
+        </span>        
+        <h2 class="card-title">{title}</h2>
+        <ul class="text-slate-300">
+            {description.map((item) => (
+                <li>- {item}</li>
+            ))}
+        </ul>
+    </div>
+</a>

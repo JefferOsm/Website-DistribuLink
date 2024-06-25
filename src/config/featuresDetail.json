@@ -1,0 +1,78 @@
+[
+    {
+        "feature": "Gestión de Usuarios",
+        "description": [{
+            "title": "Creación de Usuarios",
+            "description": "Crea y gestiona usuarios con diferentes roles y permisos."
+        }, {
+            "title": "Control de Acceso",
+            "description": "Controla el acceso a la plataforma con autenticación de dos factores."
+        }],
+        "icon": "fa-solid fa-users"
+    },
+    {
+        "feature": "Catálogo de Productos",
+        "description": [{
+            "title": "Creación de Productos",
+            "description": "Crea y gestiona productos con diferentes atributos."
+        }, {
+            "title": "Categorización de Productos",
+            "description": "Organiza tus productos en categorías y subcategorías."
+        }],
+        "icon": "fa-solid fa-store"
+    },
+    {
+        "feature": "Gestión de Pedidos",
+        "description": [
+            {
+                "title": "Creación de Pedidos",
+                "description": "Crea y gestiona pedidos de tus clientes."
+            },
+            {
+                "title": "Seguimiento de Pedidos",
+                "description": "Realiza el seguimiento de tus pedidos en tiempo real."
+            }
+        ],
+        "icon": "fa-solid fa-clipboard"
+    },
+    {
+        "feature": "Programación de Entregas",
+        "description": [
+            {
+                "title": "Programación de Entregas",
+                "description": "Programa las entregas de tus pedidos en el calendario."
+            },
+            {
+                "title": "Asignación de Rutas",
+                "description": "Asigna rutas de entrega a tus repartidores."
+            }
+        ],
+        "icon": "fa-solid fa-calendar-days"
+    },
+    {
+        "feature": "Reportes y Estadísticas",
+        "description": [
+            {
+                "title": "Reportes de Ventas",
+                "description": "Visualiza reportes de ventas por periodo."
+            },
+            {
+                "title": "Estadísticas de Ventas",
+                "description": "Visualiza estadísticas de ventas por producto."}
+        ],
+        "icon": "fa-solid fa-chart-line"
+    },
+    {
+        "feature": "Gestión de Inventario",
+        "description": [
+            {
+                "title": "Control de Stock",
+                "description": "Controla el stock de tus productos en tiempo real."
+            },
+            {
+                "title": "Alertas de Stock",
+                "description": "Recibe alertas de stock bajo para reponer productos."}
+        ],
+        "icon": "fa-solid fa-truck-ramp-box"
+    }
+]

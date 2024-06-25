@@ -1,0 +1,32 @@
+[
+    {
+        "feature": "Gestión de Usuarios",
+        "description": ["Asignación de Roles y Permisos", "Creación de Cuentas"],
+        "icon": "fa-solid fa-users"
+    },
+    {
+        "feature": "Catálogo de Productos",
+        "description": ["Búsqueda y Filtros", "Descripciones Detalladas"],
+        "icon": "fa-solid fa-store"
+    },
+    {
+        "feature": "Gestión de Pedidos",
+        "description": ["Elaboración de Pedidos", "Historial de Pedidos"],
+        "icon": "fa-solid fa-clipboard"
+    },
+    {
+        "feature": "Programación de Entregas",
+        "description": ["Calendario de Entregas", "Notificaciones"],
+        "icon": "fa-solid fa-calendar-days"
+    },
+    {
+        "feature": "Reportes y Estadísticas",
+        "description": ["Reportes de Ventas", "Reportes Personalizado"],
+        "icon": "fa-solid fa-chart-line"
+    },
+    {
+        "feature": "Gestión de Inventario",
+        "description": ["Control de Existencias", "Alertas de Stock"],
+        "icon": "fa-solid fa-truck-ramp-box"
+    }
+]
