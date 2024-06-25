@@ -22,14 +22,12 @@ import Footer from '@/components/Footer.astro';
     <title>DistribuLink | {pageTitle}</title>
 </head>
 <body class="bg-dark">
-    <div class="relative h-full w-full bg-slate-950 ">
-        <div class="absolute bottom-0 right-0 top-[-10%] h-[50vw] w-[50vw] max-h-[500px] max-w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-        <div class="absolute bottom-0 left-0 top-[-10%] h-[50vw] w-[50vw] max-h-[500px] max-w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+    <div class="absolute h-full w-full bg-slate-950 ">
+        <div class="absolute bottom-0 right-0 top-[-10%] h-[50vw] w-[50vw] max-h-[500px]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+        <div class="absolute bottom-0 left-0 top-[-10%] h-[50vw] w-[50vw] max-h-[500px]  rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
     </div>
     <Header/>
-    <main>
         <slot/>
-    </main>
     <Footer/>
 </body>
 </html>
